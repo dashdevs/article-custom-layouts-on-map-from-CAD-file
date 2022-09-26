@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21828108384EF480800233FB /* Pods_GMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393436C58B4DACB4FCED3643 /* Pods_GMaps.framework */; };
+		5A2CC614289198BD00D02B59 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC613289198BD00D02B59 /* MapData.swift */; };
+		5A2CC6182891A78500D02B59 /* Olympia.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CC6172891A78500D02B59 /* Olympia.geojson */; };
+		5A2CC61A2892BFF300D02B59 /* Gordon Rd, Vail.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CC6192892BFF300D02B59 /* Gordon Rd, Vail.geojson */; };
+		5A2CC61D2892E35600D02B59 /* MapsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC61C2892E35600D02B59 /* MapsListView.swift */; };
+		5A2CC6202892F00A00D02B59 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC61F2892F00A00D02B59 /* NetworkManager.swift */; };
+		5A2CC6222892FAF600D02B59 /* MapDataLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC6212892FAF600D02B59 /* MapDataLabelView.swift */; };
+		5A42DCE92891588200B00ACC /* GMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A42DCE82891588200B00ACC /* GMapsApp.swift */; };
+		5A42DCEB2891588200B00ACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A42DCEA2891588200B00ACC /* ContentView.swift */; };
+		5A42DCED2891588400B00ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A42DCEC2891588400B00ACC /* Assets.xcassets */; };
+		5A42DCF02891588400B00ACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A42DCEF2891588400B00ACC /* Preview Assets.xcassets */; };
+		5A42DCF728915BAC00B00ACC /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A42DCF628915BAC00B00ACC /* GoogleMapsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		393436C58B4DACB4FCED3643 /* Pods_GMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2CC613289198BD00D02B59 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
+		5A2CC6172891A78500D02B59 /* Olympia.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Olympia.geojson; sourceTree = "<group>"; };
+		5A2CC6192892BFF300D02B59 /* Gordon Rd, Vail.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Gordon Rd, Vail.geojson"; sourceTree = "<group>"; };
+		5A2CC61C2892E35600D02B59 /* MapsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsListView.swift; sourceTree = "<group>"; };
+		5A2CC61F2892F00A00D02B59 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5A2CC6212892FAF600D02B59 /* MapDataLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataLabelView.swift; sourceTree = "<group>"; };
+		5A42DCE52891588200B00ACC /* GMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A42DCE82891588200B00ACC /* GMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapsApp.swift; sourceTree = "<group>"; };
+		5A42DCEA2891588200B00ACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A42DCEC2891588400B00ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A42DCEF2891588400B00ACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A42DCF628915BAC00B00ACC /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
+		E14C727F3CE94FD1FB67E673 /* Pods-GMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps.debug.xcconfig"; path = "Target Support Files/Pods-GMaps/Pods-GMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		FB602685AD172410F3478C67 /* Pods-GMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps.release.xcconfig"; path = "Target Support Files/Pods-GMaps/Pods-GMaps.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A42DCE22891588200B00ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21828108384EF480800233FB /* Pods_GMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A2CC6112891987E00D02B59 /* GeoJSONs */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC6192892BFF300D02B59 /* Gordon Rd, Vail.geojson */,
+				5A2CC6172891A78500D02B59 /* Olympia.geojson */,
+			);
+			path = GeoJSONs;
+			sourceTree = "<group>";
+		};
+		5A2CC612289198A400D02B59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC613289198BD00D02B59 /* MapData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A2CC61B2892E33900D02B59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A42DCEA2891588200B00ACC /* ContentView.swift */,
+				5A42DCF628915BAC00B00ACC /* GoogleMapsView.swift */,
+				5A2CC61C2892E35600D02B59 /* MapsListView.swift */,
+				5A2CC6212892FAF600D02B59 /* MapDataLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A2CC61E2892EFEE00D02B59 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC61F2892F00A00D02B59 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5A42DCDC2891588200B00ACC = {
+			isa = PBXGroup;
+			children = (
+				5A42DCE72891588200B00ACC /* GMaps */,
+				5A42DCE62891588200B00ACC /* Products */,
+				7160BCE6E58B401D658AFCA7 /* Pods */,
+				CAA30D40EDAB96E111EFCD84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A42DCE62891588200B00ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A42DCE52891588200B00ACC /* GMaps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A42DCE72891588200B00ACC /* GMaps */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC61E2892EFEE00D02B59 /* Networking */,
+				5A2CC61B2892E33900D02B59 /* Views */,
+				5A2CC612289198A400D02B59 /* Model */,
+				5A2CC6112891987E00D02B59 /* GeoJSONs */,
+				5A42DCE82891588200B00ACC /* GMapsApp.swift */,
+				5A42DCEC2891588400B00ACC /* Assets.xcassets */,
+				5A42DCEE2891588400B00ACC /* Preview Content */,
+			);
+			path = GMaps;
+			sourceTree = "<group>";
+		};
+		5A42DCEE2891588400B00ACC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A42DCEF2891588400B00ACC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7160BCE6E58B401D658AFCA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E14C727F3CE94FD1FB67E673 /* Pods-GMaps.debug.xcconfig */,
+				FB602685AD172410F3478C67 /* Pods-GMaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAA30D40EDAB96E111EFCD84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				393436C58B4DACB4FCED3643 /* Pods_GMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A42DCE42891588200B00ACC /* GMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A42DCF32891588400B00ACC /* Build configuration list for PBXNativeTarget "GMaps" */;
+			buildPhases = (
+				5A336E32C317C2A20AC676A6 /* [CP] Check Pods Manifest.lock */,
+				5A42DCE12891588200B00ACC /* Sources */,
+				5A42DCE22891588200B00ACC /* Frameworks */,
+				5A42DCE32891588200B00ACC /* Resources */,
+				146E3F0B5D334BEA67E4DF3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMaps;
+			productName = GMaps;
+			productReference = 5A42DCE52891588200B00ACC /* GMaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A42DCDD2891588200B00ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5A42DCE42891588200B00ACC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A42DCE02891588200B00ACC /* Build configuration list for PBXProject "GMaps" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A42DCDC2891588200B00ACC;
+			productRefGroup = 5A42DCE62891588200B00ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A42DCE42891588200B00ACC /* GMaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A42DCE32891588200B00ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A42DCF02891588400B00ACC /* Preview Assets.xcassets in Resources */,
+				5A2CC61A2892BFF300D02B59 /* Gordon Rd, Vail.geojson in Resources */,
+				5A42DCED2891588400B00ACC /* Assets.xcassets in Resources */,
+				5A2CC6182891A78500D02B59 /* Olympia.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		146E3F0B5D334BEA67E4DF3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMaps/Pods-GMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMaps/Pods-GMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMaps/Pods-GMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A336E32C317C2A20AC676A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A42DCE12891588200B00ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2CC6202892F00A00D02B59 /* NetworkManager.swift in Sources */,
+				5A2CC614289198BD00D02B59 /* MapData.swift in Sources */,
+				5A42DCF728915BAC00B00ACC /* GoogleMapsView.swift in Sources */,
+				5A2CC6222892FAF600D02B59 /* MapDataLabelView.swift in Sources */,
+				5A2CC61D2892E35600D02B59 /* MapsListView.swift in Sources */,
+				5A42DCEB2891588200B00ACC /* ContentView.swift in Sources */,
+				5A42DCE92891588200B00ACC /* GMapsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A42DCF12891588400B00ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A42DCF22891588400B00ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A42DCF42891588400B00ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14C727F3CE94FD1FB67E673 /* Pods-GMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8NUWY2347;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuriipankov.GMapsYP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A42DCF52891588400B00ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB602685AD172410F3478C67 /* Pods-GMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8NUWY2347;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuriipankov.GMapsYP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A42DCE02891588200B00ACC /* Build configuration list for PBXProject "GMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A42DCF12891588400B00ACC /* Debug */,
+				5A42DCF22891588400B00ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A42DCF32891588400B00ACC /* Build configuration list for PBXNativeTarget "GMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A42DCF42891588400B00ACC /* Debug */,
+				5A42DCF52891588400B00ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A42DCDD2891588200B00ACC /* Project object */;
+}
